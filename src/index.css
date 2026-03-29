@@ -1,0 +1,110 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+  :root {
+    --background: 0 0% 8%;
+    --foreground: 40 10% 90%;
+
+    --card: 0 0% 12%;
+    --card-foreground: 40 10% 90%;
+
+    --popover: 0 0% 12%;
+    --popover-foreground: 40 10% 90%;
+
+    --primary: 30 60% 45%;
+    --primary-foreground: 0 0% 100%;
+
+    --secondary: 0 0% 18%;
+    --secondary-foreground: 40 10% 85%;
+
+    --muted: 0 0% 15%;
+    --muted-foreground: 0 0% 55%;
+
+    --accent: 30 60% 45%;
+    --accent-foreground: 0 0% 100%;
+
+    --destructive: 0 84.2% 60.2%;
+    --destructive-foreground: 210 40% 98%;
+
+    --border: 0 0% 20%;
+    --input: 0 0% 20%;
+    --ring: 30 60% 45%;
+
+    --radius: 0.25rem;
+
+    --bronze: 30 60% 45%;
+    --bronze-light: 35 55% 55%;
+    --bronze-dark: 25 65% 30%;
+    --charcoal: 0 0% 15%;
+    --charcoal-light: 0 0% 22%;
+    --wood: 25 40% 30%;
+    --cream: 40 30% 88%;
+
+    --font-display: 'Playfair Display', serif;
+    --font-body: 'Barlow', sans-serif;
+    --font-condensed: 'Barlow Condensed', sans-serif;
+
+    --gradient-bronze: linear-gradient(135deg, hsl(30, 60%, 45%), hsl(35, 55%, 55%));
+    --gradient-dark: linear-gradient(180deg, hsl(0, 0%, 8%), hsl(0, 0%, 5%));
+    --shadow-bronze: 0 4px 30px -5px hsl(30 60% 45% / 0.3);
+    --shadow-card: 0 10px 40px -10px hsl(0 0% 0% / 0.5);
+  }
+}
+
+@layer base {
+  * {
+    @apply border-border;
+  }
+
+  body {
+    @apply bg-background text-foreground;
+    font-family: var(--font-body);
+  }
+
+  h1, h2, h3, h4, h5, h6 {
+    font-family: var(--font-display);
+  }
+}
+
+@layer utilities {
+  .font-display {
+    font-family: var(--font-display);
+  }
+
+  .font-body {
+    font-family: var(--font-body);
+  }
+
+  .font-condensed {
+    font-family: var(--font-condensed);
+  }
+
+  .text-gradient-bronze {
+    background: var(--gradient-bronze);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    background-clip: text;
+  }
+
+  .bg-gradient-bronze {
+    background: var(--gradient-bronze);
+  }
+
+  .shadow-bronze {
+    box-shadow: var(--shadow-bronze);
+  }
+
+  .shadow-card {
+    box-shadow: var(--shadow-card);
+  }
+
+  .divider-bronze {
+    @apply w-16 h-0.5 bg-primary mx-auto;
+  }
+}
+
+html {
+  scroll-behavior: smooth;
+}
