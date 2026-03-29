@@ -45,13 +45,13 @@ const AboutSection = () => {
               Na Barbearia Shalom, acreditamos que cada corte conta uma história. Nosso espaço foi pensado para oferecer ao homem moderno um refúgio de cuidado e estilo, onde a tradição dos barbeiros clássicos se encontra com as tendências contemporâneas.
             </p>
             <p className="text-secondary-foreground leading-relaxed mb-8">
-              Nossos barbeiros são artesãos dedicados, com anos de experiência em técnicas refinadas. Cada detalhe — do ambiente industrial chic com madeira e bronze, ao atendimento personalizado — foi projetado para transformar um simples corte em uma experiência memorável.
+              Profissional, com anos de experiência em técnicas refinadas. Cada detalhe foi projetado para transformar um simples corte em uma experiência memorável.
             </p>
             <div className="flex gap-8">
               {[
-                { number: "10+", label: "Anos de experiência" },
-                { number: "5k+", label: "Clientes satisfeitos" },
-                { number: "4", label: "Barbeiros especialistas" },
+                { number: "15+", label: "Anos de experiência" },
+                { number: "500+", label: "Clientes satisfeitos" },
+                { number: "1", label: "Barbeiro especialista" },
               ].map((stat) => (
                 <div key={stat.label}>
                   <span className="font-display text-2xl md:text-3xl font-bold text-primary">{stat.number}</span>

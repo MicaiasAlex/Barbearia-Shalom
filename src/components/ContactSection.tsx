@@ -33,7 +33,7 @@ const ContactSection = () => {
             className="aspect-[4/3] bg-card border border-border overflow-hidden"
           >
             <iframe
-              src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3657.1976!2d-46.6388!3d-23.5507!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0x0!2zMjPCsDMzJzAyLjUiUyA0NsKwMzgnMTkuNyJX!5e0!3m2!1spt-BR!2sbr!4v1234567890"
+              src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d7902.700998046483!2d-34.851576!3d-7.9626829!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x7ab3d1d81d100c1%3A0x4e7bb86f8df3db34!2sBarbearia%20Shalom!5e0!3m2!1spt-BR!2sbr!4v1774811953312!5m2!1spt-BR!2sbr"
               width="100%"
               height="100%"
               style={{ border: 0 }}
@@ -55,7 +55,7 @@ const ContactSection = () => {
               <MapPin className="w-5 h-5 text-primary mt-1 flex-shrink-0" />
               <div>
                 <h3 className="font-display text-lg font-semibold text-foreground mb-1">Endereço</h3>
-                <p className="text-muted-foreground">Rua Exemplo, 123 — Centro, São Paulo - SP</p>
+                <p className="text-muted-foreground">Av. das Garças, 415 — Rio Doce, Olinda - PE</p>
               </div>
             </div>
 
@@ -63,9 +63,10 @@ const ContactSection = () => {
               <Clock className="w-5 h-5 text-primary mt-1 flex-shrink-0" />
               <div>
                 <h3 className="font-display text-lg font-semibold text-foreground mb-1">Horário de Funcionamento</h3>
-                <p className="text-muted-foreground">Seg — Sex: 9h às 20h</p>
-                <p className="text-muted-foreground">Sáb: 9h às 18h</p>
-                <p className="text-muted-foreground">Dom: Fechado</p>
+                <p className="text-muted-foreground">Seg — Sex: 8h às 18:30h</p>
+                <p className="text-muted-foreground">(obs:Paramos para almoço às 12:30h)</p>
+                <p className="text-muted-foreground">Sáb: 08h às 18:30h</p>
+                <p className="text-muted-foreground">Dom: 08h às 12h</p>
               </div>
             </div>
 
@@ -74,12 +75,12 @@ const ContactSection = () => {
               <div>
                 <h3 className="font-display text-lg font-semibold text-foreground mb-1">Telefone / WhatsApp</h3>
                 <a
-                  href="https://wa.me/5500000000000"
+                  href="https://wa.me/qr/W26JEZL46HKAD1"
                   target="_blank"
                   rel="noopener noreferrer"
                   className="text-primary hover:text-bronze-light transition-colors"
                 >
-                  (00) 00000-0000
+                  (81) 99557-0489
                 </a>
               </div>
             </div>
@@ -100,12 +101,12 @@ const ContactSection = () => {
             </div>
 
             <a
-              href="https://wa.me/5500000000000"
+              href="https://chat.whatsapp.com/GnXN23pz6Bp1t66oX8tx5B?mode=gi_t"
               target="_blank"
               rel="noopener noreferrer"
               className="inline-block bg-gradient-bronze text-primary-foreground px-8 py-4 font-condensed text-sm uppercase tracking-[0.2em] hover:opacity-90 transition-opacity shadow-bronze text-center mt-4"
             >
-              Agende pelo WhatsApp
+              Entre no nosso grupo do WhatsApp
             </a>
           </motion.div>
         </div>
